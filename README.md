@@ -1,1 +1,0 @@
-# trading-bot-ohlc-docs
