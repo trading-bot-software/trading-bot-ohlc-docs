@@ -38,11 +38,28 @@
 <span>(</span><span>bot_id: str, database: trading_bot_common.database.Database = None)</span>
 </code></dt>
 <dd>
-<div class="desc"><p>Used to store the config in database and file.</p></div>
+<div class="desc"><p>Used to store the config in database and file.</p>
+<p>Variables that can be extended:</p>
+<p>table_name: set a unique table name</p>
+<p>create_query: set a create query based on names and types your plugin uses.</p>
+<p>If you do extend this class, you can/should create also ConfigNames and ConfigTypes.
+Also, you can/should define objects that you want long lived in the constructor.
+This object, the config loader, gets loaded once and never gets destroyed.</p></div>
 <h3>Ancestors</h3>
 <ul class="hlist">
 <li>trading_bot_common.config.config_loader.ConfigLoader</li>
 </ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="trading_bot_ohlc.config.ohlc_config_loader.OHLCConfigLoader.create_query"><code class="name">var <span class="ident">create_query</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="trading_bot_ohlc.config.ohlc_config_loader.OHLCConfigLoader.table_name"><code class="name">var <span class="ident">table_name</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
 </dd>
 </dl>
 </section>
@@ -62,6 +79,10 @@
 <ul>
 <li>
 <h4><code><a title="trading_bot_ohlc.config.ohlc_config_loader.OHLCConfigLoader" href="#trading_bot_ohlc.config.ohlc_config_loader.OHLCConfigLoader">OHLCConfigLoader</a></code></h4>
+<ul class="">
+<li><code><a title="trading_bot_ohlc.config.ohlc_config_loader.OHLCConfigLoader.create_query" href="#trading_bot_ohlc.config.ohlc_config_loader.OHLCConfigLoader.create_query">create_query</a></code></li>
+<li><code><a title="trading_bot_ohlc.config.ohlc_config_loader.OHLCConfigLoader.table_name" href="#trading_bot_ohlc.config.ohlc_config_loader.OHLCConfigLoader.table_name">table_name</a></code></li>
+</ul>
 </li>
 </ul>
 </li>
